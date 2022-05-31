@@ -1,0 +1,22 @@
+{
+    "info": {
+        "name": "MemeSoundsv2",
+        "authors": [{
+            "name": "NotMoo#0132",
+            "discord_id": "488261230360788992",
+            "github_username": "NotMooo",
+            "twitter_username": "NotMooYT"
+        }],
+        "version": "0.0.1",
+        "description": "Plays Sounds A specific Sound when Someone Sends A Specific Message. If you Have Sound ideas Please Let Me Know on Discord!",
+        "github": "https://github.com/NotMooo/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js",
+        "github_raw": "https://raw.githubusercontent.com/NotMooo/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"
+    },
+    "changelog": [
+        {"title": "New Stuff", "items": ["Added automatic updates", "Added changelog"]},
+        {"title": "Bugs Squashed", "type": "fixed", "items": ["No bugs *yet*"]},
+        {"title": "Improvements", "type": "improved", "items": ["Improvements to the response time"]},
+        {"title": "On-going", "type": "progress", "items": ["More sounds being added", "Other"]}
+    ],
+    "main": "MemeSounds.index.js"
+}
