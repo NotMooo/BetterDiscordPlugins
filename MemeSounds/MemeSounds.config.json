@@ -7,7 +7,7 @@
             "github_username": "NotMooo",
             "twitter_username": "NotMooYT"
         }],
-        "version": "0.0.1",
+        "version": "0.0.2",
         "description": "Plays Sounds A specific Sound when Someone Sends A Specific Message. If you Have Sound ideas Please Let Me Know on Discord!",
         "github": "https://github.com/NotMooo/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js",
         "github_raw": "https://raw.githubusercontent.com/NotMooo/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"
