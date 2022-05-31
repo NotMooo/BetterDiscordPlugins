@@ -1,6 +1,6 @@
 /**
  * @name MemeSoundsv2
- * @version 0.0.1
+ * @version 0.0.2
  * @description Plays Sounds A specific Sound when Someone Sends A Specific Message. If you Have Sound ideas Please Let Me Know on Discord!
  * @invite 8GskwymGwR
  * @author NotMoo#0132
@@ -13,7 +13,7 @@
 module.exports = (() => {
 	
 	/* Configuration */
-	const config = {info: {name: "Meme Sounds V2", authors: [{name: "NotMoo#0132", discord_id: "488261230360788992", github_username: "NotMooo", twitter_username: "NotMooYT"},{name: "「🐾」𝓓𝓲𝓮 𝓚𝓪𝓽𝔃𝓮#7717", discord_id: "567879533500563457", github_username: "None"}], version: "0.0.1", description: "Plays Sounds A specific Sound when Someone Sends A Specific Message. If you Have Sound ideas Please Let Me Know on The Discord!", github: "https://github.com/NotMooo/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js", github_raw: "https://raw.githubusercontent.com/NotMooo/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New Stuff", items: ["simplified the code", "fixed oof and bruh sounds not playing", "fixed sound timings", "fixed sounds not being played in the order they are written", "fixed sound overlapping", "added volume slider in settings"]}]};
+	const config = {info: {name: "Meme Sounds V2", authors: [{name: "NotMoo#0132", discord_id: "488261230360788992", github_username: "NotMooo", twitter_username: "NotMooYT"},{name: "「🐾」𝓓𝓲𝓮 𝓚𝓪𝓽𝔃𝓮#7717", discord_id: "567879533500563457", github_username: "None"}], version: "0.0.2", description: "Plays Sounds A specific Sound when Someone Sends A Specific Message. If you Have Sound ideas Please Let Me Know on The Discord!", github: "https://github.com/NotMooo/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js", github_raw: "https://raw.githubusercontent.com/NotMooo/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New Stuff", items: ["simplified the code", "fixed oof and bruh sounds not playing", "fixed sound timings", "fixed sounds not being played in the order they are written", "fixed sound overlapping", "added volume slider in settings"]}]};
 
 	/* Library Stuff */
 	return !global.ZeresPluginLibrary ? class {
@@ -36,7 +36,8 @@ module.exports = (() => {
 				{re: /bazinga/gmi, file: "bazinga.mp3", duration: 550},
 				{re: /oof/gmi, file: "oof.mp3", duration: 250},
 				{re: /bruh/gmi, file: "bruh.mp3", duration: 470},
-				{re: /paulaner/gmi, file: "paulaner.mp3", duration: 300}
+				{re: /paulaner/gmi, file: "paulaner.mp3", duration: 300},
+				{re: /xd/gmi, file: "xd.mp3", duration: 900}
 			];
 
 			/* Double message event fix */
